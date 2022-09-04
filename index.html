@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
@@ -19,38 +21,39 @@
             <source media="(min-width: 375px)" srcset="./images/bg-main-mobile.png">
             <img src="./images/bg-main-mobile.png" alt="">
           </picture>
-          <div class="form">
-            <label for="name">Cardholder Name</label>
-            <input type="text" class="form-name" id="name" placeholder="e.g. Jane Appleseed">
-            <label for="number">Card Number</label>
-            <input type="number" class="form-card-number" id="number" placeholder="e.g. 1234 5678 9123 0000">
-            <label for="date">Exp. Date (MM/YY)</label>
-            <input type="number" class="form-card-number" id="date" placeholder="MM"><input type="number"
-              class="form-card-number" id="date" placeholder="YY">
-            <label for="number">CVC</label>
-            <input type="number" class="form-card-number" id="number" placeholder="e.g. 123">
-          </div>
         </div>
-        0000 0000 0000 0000
+        <form>
+          <div class="form-group">
+            <label for="inputAddress">Cardholder name</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="e.g. Jane Appleseed">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Card number</label>
+            <input type="number" class="form-control" id="inputAddress2" placeholder="e.g. 1234 5678 9123 0000">
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="inputCity">Exp. date</label>
+              <input type="number" class="form-control" id="inputCity" placeholder="MM">
+            </div>
+            <div class="form-group col">
+              <label for="inputState">(MM/YY)</label>
+              <input type="number" class="form-control" id="inputCity" placeholder="YY">
+            </div>
+            <div class="form-group col-7">
+              <label for="inputZip">CVC</label>
+              <input type="number" class="form-control" id="inputZip" placeholder="e.g. 123">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirm</button>
+        </form>
+        <!-- 0000 0000 0000 0000
         Jane Appleseed
         00/00
 
         000
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Confirm
+         -->
       </div>
 
     </section>
@@ -64,6 +67,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/PivtoranisV">Volodymyr Pivtoranis</a>.
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
