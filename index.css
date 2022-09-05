@@ -49,8 +49,27 @@ form {
 form input {
     height: 3.5rem !important;
     font-size: 1.2rem !important;
-    color: var(--light-grayish-violet);
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    color: var(--light-grayish-violet) !important;
+}
+
+.btn {
+    background-color: var(--very-dark-violet);
+    color: var(--white);
+}
+
+.btn:hover {
+    color: var(--dark-grayish-violet)
+}
+
 
 .attribution {
     font-size: 11px;
