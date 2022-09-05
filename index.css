@@ -58,6 +58,8 @@ body {
     top: 49%;
     left: 83%;
     transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 0.8rem;
 }
 
 .card-img__front__absolute {
@@ -71,24 +73,40 @@ body {
     position: relative;
     top: 0;
     left: 0;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.card-img__front__logo {
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    width: 65px;
 }
 
 .card-img__front__text__number {
     position: absolute;
-    top: 40%;
-    left: 18%;
+    top: 45%;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
 }
 
 .card-img__front__text__name {
     position: absolute;
-    top: 72%;
+    top: 78%;
     left: 5%;
+    font-size: 0.8rem;
 }
 
 .card-img__front__text__date {
     position: absolute;
-    top: 72%;
+    top: 78%;
     right: 5%;
+    font-size: 0.8rem;
 }
 
 .content {
@@ -99,7 +117,7 @@ body {
 }
 
 form {
-    padding: 3rem 1rem;
+    padding: 6rem 1rem 4rem 1rem;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
@@ -107,7 +125,7 @@ form {
 }
 
 form input {
-    height: 3.5rem !important;
+    height: 3rem !important;
     font-size: 1.2rem !important;
 }
 
