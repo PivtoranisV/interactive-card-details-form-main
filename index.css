@@ -34,6 +34,32 @@ body {
     margin: auto;
 }
 
+.card-img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card-img__back {
+    position: absolute;
+    top: -275px;
+    left: 150px;
+    background-image: url(./images/bg-card-back.png);
+    background-size: cover;
+    min-height: 200px;
+    width: 100%;
+}
+
+.card-img__front {
+    position: absolute;
+    top: -185px;
+    left: 30px;
+    background-image: url(./images/bg-card-front.png);
+    background-size: cover;
+    min-height: 200px;
+    width: 100%;
+}
+
 .content {
     background-color: var(--white);
 }
