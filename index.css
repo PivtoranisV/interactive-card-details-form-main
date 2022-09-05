@@ -1,8 +1,62 @@
- .attribution {
-     font-size: 11px;
-     text-align: center;
- }
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
- .attribution a {
-     color: hsl(228, 45%, 44%);
- }
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --dark-gray: hsl(300, 1%, 21%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+    --red: hsl(0, 100%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk',
+        sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-gray);
+    margin: 3.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.bg-img img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.content {
+    background-color: var(--white);
+}
+
+form {
+    padding: 3rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+form input {
+    height: 3.5rem !important;
+    font-size: 1.2rem !important;
+    color: var(--light-grayish-violet);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
