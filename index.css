@@ -15,12 +15,18 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
 body {
     font-family: 'Space Grotesk',
         sans-serif;
     font-size: 18px;
     background-color: var(--dark-gray);
-    margin: 3.5rem 1.5rem;
+    margin: 0 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,40 +34,68 @@ body {
     min-height: 100vh;
 }
 
-.bg-img img {
-    display: block;
-    width: 100%;
-    margin: auto;
-}
-
-.card-img {
+.card-detail {
     position: relative;
     top: 0;
     left: 0;
 }
 
-.card-img__back {
+.card-img__back__absolute {
     position: absolute;
-    top: -275px;
-    left: 150px;
-    background-image: url(./images/bg-card-back.png);
-    background-size: cover;
-    min-height: 200px;
-    width: 100%;
+    top: 1%;
+    left: 20%;
+    right: 3%;
+}
+
+.card-img__back {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card-img__back__text {
+    position: absolute;
+    top: 49%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+}
+
+.card-img__front__absolute {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    right: 12%;
 }
 
 .card-img__front {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card-img__front__text__number {
     position: absolute;
-    top: -185px;
-    left: 30px;
-    background-image: url(./images/bg-card-front.png);
-    background-size: cover;
-    min-height: 200px;
-    width: 100%;
+    top: 40%;
+    left: 18%;
+}
+
+.card-img__front__text__name {
+    position: absolute;
+    top: 72%;
+    left: 5%;
+}
+
+.card-img__front__text__date {
+    position: absolute;
+    top: 72%;
+    right: 5%;
 }
 
 .content {
     background-color: var(--white);
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 form {
