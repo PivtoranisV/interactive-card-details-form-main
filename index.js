@@ -9,6 +9,8 @@ const inputMonth = document.querySelector("#inputExpDate");
 const monthOnTheCard = document.querySelector(".mm");
 const inputYear = document.querySelector("#inputDate");
 const yearOnTheCard = document.querySelector(".yy");
+const inputCVC = document.querySelector("#inputCVC");
+const CvcOnTheCard = document.querySelector(".card-img__back__text");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -25,11 +27,15 @@ inputYear.addEventListener("keyup", () => {
   yearOnTheCard.innerHTML = inputYear.value;
 });
 
+inputCVC.addEventListener("keyup", () => {
+  CvcOnTheCard.innerHTML = inputCVC.value;
+});
+
 // Helper function
 
 function displayNumber() {
-  let cardNumber = inputNumber.value;
-  let format = [...cardNumber].map((el, index) => {
+  const cardNumber = inputNumber.value;
+  const format = [...cardNumber].map((el, index) => {
     if ((index + 1) % 4 === 0) {
       el = el + " ";
     }
