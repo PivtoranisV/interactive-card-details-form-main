@@ -51,11 +51,13 @@
             <label for="inputNumber">Card number</label>
             <input type="number" class="form-control" id="inputNumber" placeholder="e.g. 1234 5678 9123 0000">
           </div>
+          <p class="number-error"></p>
           <div class="form-row">
             <div class="form-group col">
               <label for="inputExpDate">Exp.date</label>
               <input type="number" class="form-control" id="inputExpDate" placeholder="MM">
             </div>
+            <p class="date-error"></p>
             <div class="form-group col">
               <label for="inputDate">(MM/YY)</label>
               <input type="number" class="form-control" id="inputDate" placeholder="YY">
@@ -64,6 +66,7 @@
               <label for="inputCVC">CVC</label>
               <input type="number" class="form-control" id="inputCVC" placeholder="e.g. 123">
             </div>
+            <p class="cvc-error"></p>
           </div>
           <button type="submit" class="btn btn-lg btn-block">Confirm</button>
         </form>
