@@ -179,9 +179,9 @@ input::-webkit-inner-spin-button {
     margin: 4rem 0;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 .attribution {
     margin-top: 1rem;

@@ -12,6 +12,8 @@ const yearOnTheCard = document.querySelector(".yy");
 const inputCVC = document.querySelector("#inputCVC");
 const CvcOnTheCard = document.querySelector(".card-img__back__text");
 const confirmBtn = document.querySelector(".confirm");
+const completeWindow = document.querySelector(".complete-state");
+const formWindow = document.querySelector(".form-window");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -32,8 +34,11 @@ inputCVC.addEventListener("keyup", () => {
   CvcOnTheCard.innerHTML = inputCVC.value;
 });
 
-// Helper function
+confirmBtn.addEventListener("click", () => {
+  completeWindow.style.display = "none";
+});
 
+// Helper function
 function displayNumber() {
   const cardNumber = inputNumber.value;
   const format = [...cardNumber].map((el, index) => {
