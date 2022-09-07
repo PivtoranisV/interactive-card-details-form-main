@@ -11,6 +11,7 @@ const inputYear = document.querySelector("#inputDate");
 const yearOnTheCard = document.querySelector(".yy");
 const inputCVC = document.querySelector("#inputCVC");
 const CvcOnTheCard = document.querySelector(".card-img__back__text");
+const confirmBtn = document.querySelector(".confirm");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {

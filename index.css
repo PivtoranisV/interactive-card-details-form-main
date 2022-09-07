@@ -154,7 +154,6 @@ input::-webkit-inner-spin-button {
 }
 
 .complete-state {
-
     background-color: var(--white);
     padding: 6rem 1rem 4rem 1rem;
 }
@@ -180,6 +179,10 @@ input::-webkit-inner-spin-button {
     margin: 4rem 0;
 }
 
+.hidden {
+    display: none;
+}
+
 .attribution {
     margin-top: 1rem;
     font-size: 12px;
@@ -188,5 +191,5 @@ input::-webkit-inner-spin-button {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(190, 94%, 50%);
 }
