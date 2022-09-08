@@ -129,12 +129,6 @@ form input {
     font-size: 1.2rem !important;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 ::placeholder {
     color: var(--light-grayish-violet) !important;
 }

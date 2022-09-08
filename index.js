@@ -16,6 +16,7 @@ const completeWindow = document.querySelector(".complete-state");
 const formWindow = document.querySelector(".form-window");
 const nameError = document.querySelector(".name-error");
 const numberError = document.querySelector(".number-error");
+const monthError = document.querySelector(".date-error");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -60,6 +61,13 @@ function validation() {
   ) {
     numberError.innerHTML = "Please, provide correct card number";
     inputNumber.style.border = "1px solid var(--red)";
+  } else if (
+    inputMonth.value.length !== 2 ||
+    inputMonth.value.match(/^[0-9]+$/) === null ||
+    inputMonth.value > 12
+  ) {
+    monthError.innerHTML = "Please, provide correct exp. month";
+    inputMonth.style.border = "1px solid var(--red)";
   } else {
     formWindow.classList.add("hidden");
     completeWindow.classList.remove("hidden");

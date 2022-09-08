@@ -55,19 +55,22 @@
           <div class="form-row">
             <div class="form-group col">
               <label for="inputExpDate">Exp.date</label>
-              <input type="number" class="form-control" id="inputExpDate" placeholder="MM">
+              <input type="text" maxlength="2" class="form-control" id="inputExpDate" placeholder="MM">
             </div>
-            <p class="date-error"></p>
+
             <div class="form-group col">
               <label for="inputDate">(MM/YY)</label>
-              <input type="number" class="form-control" id="inputDate" placeholder="YY">
+              <input type="text" maxlength="2" class="form-control" id="inputDate" placeholder="YY">
             </div>
             <div class="form-group col-6">
               <label for="inputCVC">CVC</label>
-              <input type="number" class="form-control" id="inputCVC" placeholder="e.g. 123">
+              <input type="text" maxlength="3" class="form-control" id="inputCVC" placeholder="e.g. 123">
             </div>
-            <p class="cvc-error"></p>
+
           </div>
+          <p class="date-error"></p>
+          <p class="cvc-error"></p>
+          <p class="year-error"></p>
           <button type="button" class="btn btn-lg btn-block confirm">Confirm</button>
         </form>
       </div>
