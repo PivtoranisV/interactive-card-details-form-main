@@ -15,6 +15,7 @@ const confirmBtn = document.querySelector(".confirm");
 const completeWindow = document.querySelector(".complete-state");
 const formWindow = document.querySelector(".form-window");
 const nameError = document.querySelector(".name-error");
+const numberError = document.querySelector(".number-error");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -53,6 +54,12 @@ function validation() {
   if (inputName.value.length === 0) {
     nameError.innerHTML = `Can't be blank`;
     inputName.style.border = "1px solid var(--red)";
+  } else if (
+    inputNumber.value.length !== 16 ||
+    inputNumber.value.match(/^[0-9]+$/) === null
+  ) {
+    numberError.innerHTML = "Please, provide correct card number";
+    inputNumber.style.border = "1px solid var(--red)";
   } else {
     formWindow.classList.add("hidden");
     completeWindow.classList.remove("hidden");
