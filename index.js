@@ -14,6 +14,7 @@ const CvcOnTheCard = document.querySelector(".card-img__back__text");
 const confirmBtn = document.querySelector(".confirm");
 const completeWindow = document.querySelector(".complete-state");
 const formWindow = document.querySelector(".form-window");
+const nameError = document.querySelector(".name-error");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -34,9 +35,7 @@ inputCVC.addEventListener("keyup", () => {
   CvcOnTheCard.innerHTML = inputCVC.value;
 });
 
-confirmBtn.addEventListener("click", () => {
-  completeWindow.style.display = "none";
-});
+confirmBtn.addEventListener("click", validation);
 
 // Helper function
 function displayNumber() {
@@ -48,4 +47,14 @@ function displayNumber() {
     return el;
   });
   numberOnTheCard.innerHTML = format.join("");
+}
+
+function validation() {
+  if (inputName.value.length === 0) {
+    nameError.innerHTML = `Can't be blank`;
+    inputName.style.border = "1px solid var(--red)";
+  } else {
+    formWindow.classList.add("hidden");
+    completeWindow.classList.remove("hidden");
+  }
 }

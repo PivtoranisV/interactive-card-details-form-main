@@ -179,9 +179,20 @@ input::-webkit-inner-spin-button {
     margin: 4rem 0;
 }
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
+
+.name-error,
+.number-error,
+.date-error,
+.cvc-error {
+    text-transform: none;
+    color: var(--red);
+    letter-spacing: normal;
+    margin: -15px 0 2rem 0;
+
+}
 
 .attribution {
     margin-top: 1rem;
