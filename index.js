@@ -18,6 +18,7 @@ const nameError = document.querySelector(".name-error");
 const numberError = document.querySelector(".number-error");
 const monthError = document.querySelector(".date-error");
 const yearError = document.querySelector(".year-error");
+const cvcError = document.querySelector(".cvc-error");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -77,12 +78,13 @@ function validation() {
     inputYear.style.border = "1px solid var(--red)";
   } else if (
     inputCVC.value.length !== 3 ||
-    inputYear.value.match(/^[0-9]+$/) === null
+    inputCVC.value.match(/^[0-9]+$/) === null
   ) {
-    yearError.innerHTML = "Please, provide correct exp. year";
-    inputYear.style.border = "1px solid var(--red)";
+    cvcError.innerHTML = "Please, provide correct CVC";
+    inputCVC.style.border = "1px solid var(--red)";
   } else {
     formWindow.classList.add("hidden");
     completeWindow.classList.remove("hidden");
+    document.querySelector(".card-img__front__absolute").style.top = "39%";
   }
 }
