@@ -180,7 +180,9 @@ form input {
 .name-error,
 .number-error,
 .date-error,
+.year-error,
 .cvc-error {
+    display: inline;
     text-transform: none;
     color: var(--red);
     letter-spacing: normal;

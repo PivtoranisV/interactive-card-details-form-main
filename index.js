@@ -17,6 +17,7 @@ const formWindow = document.querySelector(".form-window");
 const nameError = document.querySelector(".name-error");
 const numberError = document.querySelector(".number-error");
 const monthError = document.querySelector(".date-error");
+const yearError = document.querySelector(".year-error");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -68,6 +69,18 @@ function validation() {
   ) {
     monthError.innerHTML = "Please, provide correct exp. month";
     inputMonth.style.border = "1px solid var(--red)";
+  } else if (
+    inputYear.value.length !== 2 ||
+    inputYear.value.match(/^[0-9]+$/) === null
+  ) {
+    yearError.innerHTML = "Please, provide correct exp. year";
+    inputYear.style.border = "1px solid var(--red)";
+  } else if (
+    inputCVC.value.length !== 3 ||
+    inputYear.value.match(/^[0-9]+$/) === null
+  ) {
+    yearError.innerHTML = "Please, provide correct exp. year";
+    inputYear.style.border = "1px solid var(--red)";
   } else {
     formWindow.classList.add("hidden");
     completeWindow.classList.remove("hidden");
