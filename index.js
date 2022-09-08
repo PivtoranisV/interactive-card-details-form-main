@@ -19,6 +19,7 @@ const numberError = document.querySelector(".number-error");
 const monthError = document.querySelector(".date-error");
 const yearError = document.querySelector(".year-error");
 const cvcError = document.querySelector(".cvc-error");
+const continueBtn = document.querySelector(".continue");
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -40,6 +41,11 @@ inputCVC.addEventListener("keyup", () => {
 });
 
 confirmBtn.addEventListener("click", validation);
+
+continueBtn.addEventListener("click", () => {
+  formWindow.classList.remove("hidden");
+  completeWindow.classList.add("hidden");
+});
 
 // Helper function
 function displayNumber() {
