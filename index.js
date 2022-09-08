@@ -20,6 +20,10 @@ const monthError = document.querySelector(".date-error");
 const yearError = document.querySelector(".year-error");
 const cvcError = document.querySelector(".cvc-error");
 const continueBtn = document.querySelector(".continue");
+const inputs = document.querySelectorAll("input");
+const inputsOnCard = document.querySelectorAll(
+  ".card-img__front__text__name, .card-img__front__text__number, .mm, .yy, .card-img__back__text"
+);
 
 // Event Listeners
 inputName.addEventListener("keyup", () => {
@@ -42,10 +46,7 @@ inputCVC.addEventListener("keyup", () => {
 
 confirmBtn.addEventListener("click", validation);
 
-continueBtn.addEventListener("click", () => {
-  formWindow.classList.remove("hidden");
-  completeWindow.classList.add("hidden");
-});
+continueBtn.addEventListener("click", newWindow);
 
 // Helper function
 function displayNumber() {
@@ -93,4 +94,12 @@ function validation() {
     completeWindow.classList.remove("hidden");
     document.querySelector(".card-img__front__absolute").style.top = "39%";
   }
+}
+
+function newWindow() {
+  formWindow.classList.remove("hidden");
+  completeWindow.classList.add("hidden");
+  inputs.forEach((input) => (input.value = ""));
+  inputsOnCard.forEach((el) => (el.innerHTML = ""));
+  document.querySelector(".card-img__front__absolute").style.top = "15%";
 }
