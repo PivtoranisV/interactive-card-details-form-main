@@ -204,12 +204,23 @@ form input {
         align-items: center;
     }
 
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
     body {
         max-width: 990px;
     }
 
     .card-detail {
         height: 800px;
+    }
+
+    .complete-state {
+        height: 900px;
+        width: 500px;
+        padding-top: 26rem;
     }
 
     img {
