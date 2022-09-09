@@ -35,13 +35,6 @@ body {
     max-width: 380px;
 }
 
-@media (min-width: 768) {
-    .content {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 .card-detail {
     position: relative;
     top: 0;
@@ -202,4 +195,54 @@ form input {
 
 .attribution a {
     color: hsl(190, 94%, 50%);
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    body {
+        max-width: 990px;
+    }
+
+    .card-detail {
+        height: 800px;
+    }
+
+    img {
+        width: fit-content;
+    }
+
+    .card-img {
+        width: fit-content;
+    }
+
+    .card-img__front__absolute {
+
+        top: 25%;
+    }
+
+    .card-img__front__logo {
+        top: 9%;
+        left: 25%;
+    }
+
+    .card-img__front__text__name {
+        left: 25%;
+    }
+
+    .card-img__front__text__date {
+        left: 68%;
+    }
+
+    .card-img__back__text {
+        left: 72%;
+    }
+
+    form {
+        padding: 29rem 1rem 0 1rem;
+    }
 }
