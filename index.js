@@ -101,5 +101,5 @@ function newWindow() {
   completeWindow.classList.add("hidden");
   inputs.forEach((input) => (input.value = ""));
   inputsOnCard.forEach((el) => (el.innerHTML = ""));
-  document.querySelector(".card-img__front__absolute").style.top = "15%";
+  document.querySelector(".card-img__front__absolute").style.top = "14%";
 }
